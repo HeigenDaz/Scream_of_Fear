@@ -7157,7 +7157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 1606076397}
   player: {fileID: 1109246795}
-  chaseDistance: 100
+  chaseDistance: 50
   patrolRadius: 15
   waitTime: 1
 --- !u!195 &1606076397
@@ -8884,15 +8884,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 363264237667080991, guid: 6a57508ea9f1a2e4ba69675cdd7361e3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.74
+      value: -46
       objectReference: {fileID: 0}
     - target: {fileID: 363264237667080991, guid: 6a57508ea9f1a2e4ba69675cdd7361e3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.97
+      value: 1.14
       objectReference: {fileID: 0}
     - target: {fileID: 363264237667080991, guid: 6a57508ea9f1a2e4ba69675cdd7361e3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.03
+      value: 118.41
       objectReference: {fileID: 0}
     - target: {fileID: 363264237667080991, guid: 6a57508ea9f1a2e4ba69675cdd7361e3, type: 3}
       propertyPath: m_LocalRotation.w
