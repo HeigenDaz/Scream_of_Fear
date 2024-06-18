@@ -1,9 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-
 
 public class menu : MonoBehaviour
 {
@@ -19,11 +16,22 @@ public class menu : MonoBehaviour
     public void playGame()
     {
         loadingscreen.SetActive(true);
+        StartCoroutine(LoadLevel()); // Menggunakan coroutine (opsional)
+    }
+
+    IEnumerator LoadLevel() // Coroutine untuk loading scene (opsional)
+    {
+        yield return new WaitForSeconds(2f); // Jeda waktu simulasi loading
         SceneManager.LoadScene(sceneName);
     }
+
     public void quitGame()
     {
-        Debug.Log("This will quit the game, only works in actual build, not in Unity editor.");
-        Application.Quit();
+        #if UNITY_EDITOR
+            Debug.Log("This will quit the game, only works in actual build, not in Unity editor.");
+        #else
+            Application.Quit();
+        #endif
     }
 }
+
