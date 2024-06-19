@@ -21,7 +21,7 @@ public class menu : MonoBehaviour
 
     IEnumerator LoadLevel() // Coroutine untuk loading scene (opsional)
     {
-        yield return new WaitForSeconds(5f); // Jeda waktu simulasi loading
+        yield return new WaitForSeconds(10f); // Jeda waktu simulasi loading
         SceneManager.LoadScene(sceneName);
     }
 
