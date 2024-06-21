@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class pickupLetter : MonoBehaviour
 {
-    public GameObject collectTextObj, intText;
+    public GameObject collectTextObj, intText, escapeTrigger, escapeText; 
     public AudioSource pickupSound, ambianceLayer1, ambianceLayer2, ambianceLayer3, ambianceLayer4, ambianceLayer5, ambianceLayer6, ambianceLayer7, ambianceLayer8;
     public bool interactable;
     public static int stonescollected;
@@ -81,6 +81,8 @@ public class pickupLetter : MonoBehaviour
                 break;
             case 8:
                 ambianceLayer8.Play();
+                escapeText.SetActive(true);
+                escapeTrigger.SetActive(true);
                 break;
         }
         intText.SetActive(false);
