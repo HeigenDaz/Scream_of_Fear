@@ -9,11 +9,12 @@ public class DisableObject : MonoBehaviour
 
     void Update()
     {
-        if (Obj.active == true)
+        if (Obj.activeSelf)
         {
             StartCoroutine(Disableobj());
         }
     }
+
     IEnumerator Disableobj()
     {
         yield return new WaitForSeconds(activeTime);

@@ -99,6 +99,7 @@ public class EnemyAI : MonoBehaviour
     }
     IEnumerator deathRoutine()
     {
+        Debug.Log("Player caught, triggering jumpscare");
         yield return new WaitForSeconds(jumpscareTime);
         SceneManager.LoadScene(deathScene);
     }
