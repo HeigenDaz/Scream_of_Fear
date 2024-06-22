@@ -21379,7 +21379,7 @@ MonoBehaviour:
   player: {fileID: 1109246795}
   destinationAmount: 11
   rayCastOffset: {x: 1, y: 1, z: 1}
-  deathScene: won
+  deathScene: lost
 --- !u!4 &2001675527
 Transform:
   m_ObjectHideFlags: 0
@@ -25651,7 +25651,7 @@ MonoBehaviour:
   player: {fileID: 1109246795}
   destinationAmount: 9
   rayCastOffset: {x: 0, y: 0, z: 0}
-  deathScene: won
+  deathScene: lost
 --- !u!195 &7836456306156399637
 NavMeshAgent:
   m_ObjectHideFlags: 0
